@@ -4,6 +4,7 @@ import Values from "./components/Values/Values.jsx"
 import SocialMedial from "./components/CTA/CTA_SM.jsx"
 import Team from "./components/Team/Team.jsx"
 import Footer from "./components/Footer/Footer.jsx"
+import Contact from "./components/Contact/Contact.jsx"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Values />
       <Team />
+      <Contact />
       <SocialMedial />
       <Footer />
     </>
