@@ -1,0 +1,45 @@
+/* From Uiverse.io by vikiWayne */
+.button {
+  padding: 0.25em 0.5em;
+  border: none;
+  border-radius: 5px;
+  font-weight: semibold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+#btn_menu:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+#btn_menu::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffb84c;
+  transform: skewX(15deg);
+  z-index: -1;
+  transition: width 700ms;
+}
+
+#btn_menu:hover::before {
+  width: 110%;
+}
+
+#green_card {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(145deg, transparent 35%, #008235, #008235) border-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px;
+}
