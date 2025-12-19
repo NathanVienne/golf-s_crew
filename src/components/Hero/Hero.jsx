@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="relative h-screen flex items-center justify-center">
+        <section id="jumbo" className="relative h-screen flex items-center justify-center">
             <div className="absolute">
                 <img src="public/hero-golf.jpg" alt="Image d'un green ensoleillé" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/30 to-background/90"></div>
