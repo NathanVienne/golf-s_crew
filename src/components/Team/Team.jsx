@@ -1,5 +1,6 @@
 import { mdiInstagram, mdiFacebook } from '@mdi/js';
 import Social from './Socials';
+import Goals from './Goals';
 
 export default function Team() {
     const members = [
@@ -42,17 +43,18 @@ export default function Team() {
     ]
     return (
         <section id="team" className="bg-primary pt-15">
-            <h2 className="text-center font-semibold text-5xl text-white mb-15">La Team</h2>
+            <h2 className="text-center font-semibold text-5xl text-white mb-3">La Team</h2>
+            <hr className="w-50 mx-auto mb-15 text-accent" />
             <div className="grid grid-cols-3 place-items-center gap-y-10 pb-15">
                 {members.map((member, index) => (
                     <article key={index} className="bg-neutral text-center rounded-xl py-5 w-55 outline outline-1 outline-gray-500
                     hover:shadow hover:shadow-lg hover:shadow-accent hover:outline-accent hover:scale-105 transition duration-500 ease-in-out">
                         <div className="avatar mb-2 flex flex-col items-center">
-                            <p className="text-neutral badge badge-accent">{member.index}</p>
                             <div className="w-25 skeleton rounded-full">
                             </div>
                         </div>
                         <div className="text-xl text-base-100 font-semibold">{member.name}</div>
+                        <p className="text-neutral badge badge-accent">{member.index}</p>
                         <div>
                             <hr className="w-35 text-info mx-auto mt-4" />
                         </div>
@@ -91,8 +93,8 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3>Nos Objectifs</h3>
+                <div className='mt-12'>
+                    <Goals />
                 </div>
             </section>
         </section>

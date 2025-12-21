@@ -11,7 +11,8 @@ export default function Values() {
 
     return (
         <section id="values" className='py-15'>
-            <h2 className='text-center text-primary text-5xl mb-12 font-semibold'>Notre Philosophie</h2>
+            <h2 className='text-center text-primary text-5xl mb-3 font-semibold'>Notre Philosophie</h2>
+            <hr className="w-100 mx-auto mb-12 text-accent" />
             <div className='flex justify-evenly'>
                 {values.map((value, index) => (
                     <article
