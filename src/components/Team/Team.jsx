@@ -45,14 +45,14 @@ export default function Team() {
             <h2 className="text-center font-semibold text-5xl text-white mb-15">La Team</h2>
             <div className="grid grid-cols-3 place-items-center gap-y-10 pb-15">
                 {members.map((member, index) => (
-                    <article key={index} className="bg-white text-center rounded-xl py-5 w-55 outline outline-2 outline-info
+                    <article key={index} className="bg-neutral text-center rounded-xl py-5 w-55 outline outline-1 outline-gray-500
                     hover:shadow hover:shadow-lg hover:shadow-accent hover:outline-accent hover:scale-105 transition duration-500 ease-in-out">
-                        <div className="avatar mb-2">
+                        <div className="avatar mb-2 flex flex-col items-center">
+                            <p className="text-neutral badge badge-accent">{member.index}</p>
                             <div className="w-25 skeleton rounded-full">
                             </div>
                         </div>
-                        <div className="text-xl text-accent font-semibold">{member.name}</div>
-                        <p className="text-white">{member.index}</p>
+                        <div className="text-xl text-base-100 font-semibold">{member.name}</div>
                         <div>
                             <hr className="w-35 text-info mx-auto mt-4" />
                         </div>
@@ -60,17 +60,17 @@ export default function Team() {
                             <ul className='flex justify-center space-x-2'>
                                 {member.socials.map((social, j) => (
                                     <li>
-                                        <Social key={j} list={social}/>
+                                        <Social key={j} list={social} />
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     </article>))}
             </div>
-            <section id="about" className="bg-white py-15">
+            <section id="about" className="bg-base-100 py-15">
                 <h3 className="text-center font-semibold text-4xl">Notre Parcours</h3>
                 <div className="flex justify-around mt-8">
-                    <div id="green_card" className="max-w-xl space-y-3">
+                    <div id="green_card" className="max-w-2xl space-y-3 bg-base-200 p-4 rounded-2xl">
                         <h4 className="text-center text-primary text-2xl uppercase font-semibold">Carte Verte</h4>
                         <p className="text-justify">Notre première année de golf, c'est surtout beaucoup de découvertes… et pas mal de galères aussi.
                             On a commencé par les premiers cours, à essayer de comprendre comment faire voler une balle correctement, entre deux swings approximatifs et quelques bonnes surprises.
@@ -82,7 +82,7 @@ export default function Team() {
                     {/* green card */}
                     <div className="w-lg my-auto">
                         <div
-                            className=" flex items-center bg-green-700 p-4 border border-white border-opacity-30 h-75 rounded-xl shadow-2xl max-w-lg mx-auto space-y-3"
+                            className=" flex items-center bg-green-700 p-4 border border-accent border-opacity-30 h-75 rounded-xl shadow-2xl max-w-lg mx-auto space-y-3"
                         >
                             <div className="w-20">
                                 <img src="public/green_card.png" alt="" className="outline outline-xs outline-accent rounded-full p-2" />
@@ -90,6 +90,9 @@ export default function Team() {
                             <div className="text-center flex-1 mx-auto text-white text-8xl font-semibold uppercase self-center">Carte<br /><span>Verte</span></div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <h3>Nos Objectifs</h3>
                 </div>
             </section>
         </section>
