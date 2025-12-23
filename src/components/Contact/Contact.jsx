@@ -5,14 +5,14 @@ export default function Contact() {
                 <h2 className="text-center text-5xl font-semibold mb-3">Contactez-Nous</h2>
                 <hr className="w-90 mx-auto mb-8 text-accent" />
                 <div className="">
-                    <div className="max-w-sm mx-auto px-8 py-6 bg-neutral rounded-lg shadow-lg">
+                    <div className="max-w-sm mx-auto px-8 py-6 bg-primary rounded-lg shadow-lg">
                         <form>
                             <div className="mb-4">
                                 <label className="block text-accent mb-1 " for="name">
                                     Nom & Prénom
                                 </label>
                                 <input
-                                    className="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-info transition duration-300"
+                                    className="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-base-100 transition duration-300"
                                     placeholder="Entrez votre Nom & Prénom"
                                     type="text"
                                 />
@@ -22,7 +22,7 @@ export default function Contact() {
                                     Adresse Email
                                 </label>
                                 <input
-                                    className="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-info transition duration-300"
+                                    className="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-base-100 transition duration-300"
                                     placeholder="Entrez votre adresse email"
                                     name="email"
                                     id="email"
@@ -34,7 +34,7 @@ export default function Contact() {
                                     Votre Message
                                 </label>
                                 <textarea
-                                    className="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-info transition duration-300"
+                                    className="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-base-100 transition duration-300"
                                     rows="4"
                                     placeholder="Insérez votre message"
                                     name="message"

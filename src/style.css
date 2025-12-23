@@ -1,4 +1,4 @@
-/* From Uiverse.io by vikiWayne */
+/* nav buttons */
 .button {
   padding: 0.25em 0.5em;
   border: none;
@@ -36,14 +36,106 @@
   width: 110%;
 }
 
-/* #green_card {
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(145deg, transparent 35%, #008235, #008235) border-box;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    padding: 10px;
-} */
+/* Values cards*/
+.square {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  border-radius: 24px;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 36px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #edf1f5;
+  border: 1px solid #042e38;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content::before {
+  position: absolute;
+  content: "";
+  top: -4%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%);
+  background: rgba(178, 158, 81, 0.62);
+  z-index: -1;
+  transform-origin: bottom;
+
+  border-radius: inherit;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content::after {
+  position: absolute;
+  content: "";
+  top: -8%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%);
+  background: rgba(178, 158, 81, 0.28);
+  z-index: -2;
+  transform-origin: bottom;
+  border-radius: inherit;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content svg {
+  width: 48px;
+  height: 48px;
+}
+
+.content .para {
+  z-index: 1;
+  opacity: 1;
+  font-size: 18px;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .link {
+  z-index: 1;
+  color: #fea000;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .link:hover {
+  text-decoration: underline;
+}
+
+.square:hover {
+  transform: translate(0px, -16px);
+}
+
+.square:hover .content::before {
+  rotate: -8deg;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.square:hover .content::after {
+  rotate: 8deg;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* contact coin */
 .coin {
   font-size: 400px;
   width: 0.1em;
@@ -53,7 +145,9 @@
   transform-style: preserve-3d;
 }
 
-.coin .side, .coin:before, .coin:after {
+.coin .side,
+.coin:before,
+.coin:after {
   content: "";
   position: absolute;
   width: 1em;
@@ -69,12 +163,14 @@
   backface-visibility: hidden;
 }
 
-.coin .tails, .coin:after {
+.coin .tails,
+.coin:after {
   left: -0.4em;
   transform: rotateY(90deg);
 }
 
-.coin:before, .coin:after {
+.coin:before,
+.coin:after {
   background: linear-gradient(#042e38, #141001);
   backface-visibility: hidden;
   transform: rotateY(90deg);
