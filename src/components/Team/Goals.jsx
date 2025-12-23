@@ -9,18 +9,19 @@ export default function Goals() {
     ]
     return (
         <section id="goals" className='bg-primary py-10'>
-            <h3 className='text-center text-base-100 font-semibold text-4xl mb-8'>Nos objectifs sur l'année 2026</h3>
-            <div className='flex justify-evenly'>
+            <h3 className='text-center text-base-100 font-semibold text-4xl mb-12'>Nos objectifs sur l'année 2026</h3>
+            <div className='flex flex-col items-center gap-y-8 md:flex-row md:justify-evenly'>
                 {Goals.map((goal, index) => (
-                    <div class="card" key={index}>
-                        <p class="card-title">{goal.label}</p>
-                        <p class="small-desc">
-                            {goal.description}
-                        </p>
-                        <div class="go-corner">
-                            <div class="go-arrow"><Icon path={goal.iconPath} size={1} /></div>
+                <div class="cards__inner" key={index}>
+                    <div class="cards__card goal">
+                        <div>
+                            <Icon path={goal.iconPath} size={2} />
                         </div>
+                        <p class="card__heading">{goal.label}</p>
                     </div>
+                    <div class="overlay cards__inner"></div>
+                </div>
+
                 ))}
             </div>
         </section>
