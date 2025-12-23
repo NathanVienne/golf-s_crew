@@ -71,7 +71,7 @@ export default function Team() {
             </div>
             <section id="about" className="bg-base-100 py-15">
                 <h3 className="text-center font-semibold text-4xl">Notre Parcours</h3>
-                <div className="flex flex-col md:flex-row justify-around mt-8 gap-y-5">
+                <div className="flex flex-col md:flex-row items-center md:justify-around mt-8 gap-y-5">
                     <div id="green_card" className="max-w-2xl space-y-3 bg-base-200 p-4 rounded-2xl">
                         <h4 className="text-center text-primary text-2xl uppercase font-semibold">Carte Verte</h4>
                         <p className="text-justify">Notre première année de golf, c'est surtout beaucoup de découvertes… et pas mal de galères aussi.
@@ -82,7 +82,7 @@ export default function Team() {
                         </p>
                     </div>
                     {/* green card */}
-                    <div className="w-sm md:w-lg my-auto mx-auto">
+                    <div className="w-sm md:w-lg m-auto">
                         <div
                             className="flex items-center bg-green-700 p-4 border border-accent border-opacity-30 h-45 md:h-75 rounded-xl shadow-2xl max-w-xs md:max-w-lg mx-auto space-y-3"
                         >
