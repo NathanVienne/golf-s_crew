@@ -1,4 +1,10 @@
+import { useState } from "react"
+import ToastAlert from "./ToastAlert"
+
 export default function Contact() {
+    const [toast, setToast] = useState({ show: false })
+
+
     return (
         <section id="contact" className="my-15 flex flex-col-reverse gap-y-5 md:flex-row items-center justify-center">
             <div className="container flex flex-col w-full md:w-150">
@@ -43,7 +49,8 @@ export default function Contact() {
                             </div>
                             <button
                                 className="w-full btn btn-outline btn-accent text-accent py-2 px-4 rounded-lg hover:text-gray-100 transition duration-300"
-                                type="submit"
+                                type="button"
+                                onClick={() => setToast({ show: true })}
                             >
                                 Envoyer
                             </button>
@@ -62,6 +69,8 @@ export default function Contact() {
                 </div>
                 <div className="w-24 h-3 bg-black/50 rounded-full blur-sm mt-[-2px]"></div>
             </div>
+
+            <ToastAlert toast={toast} setToast={setToast} />
         </section>
     )
 }
