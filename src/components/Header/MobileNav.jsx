@@ -1,3 +1,5 @@
+import logo from '/LOGOS.png'
+
 export default function MobileNav() {
     return (
         <nav className="block md:hidden">
@@ -18,7 +20,7 @@ export default function MobileNav() {
                     </div>
                 </div>
                 <div className="navbar-center w-11">
-                    <img src="/LOGOS.png" alt="" className="rounded-full outline outline-accent" />
+                    <img src={logo} alt="" className="rounded-full outline outline-accent" />
                 </div>
                 <div className="navbar-end">
                     <button className="btn btn-ghost btn-circle">

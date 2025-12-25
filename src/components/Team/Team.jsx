@@ -1,7 +1,7 @@
 import { mdiInstagram, mdiFacebook } from '@mdi/js';
 import Social from './Socials';
 import Goals from './Goals';
-
+import greenCard from '/green_card.png'
 export default function Team() {
     const members = [
         {
@@ -87,7 +87,7 @@ export default function Team() {
                             className="flex items-center bg-green-700 p-4 border border-accent border-opacity-30 h-45 md:h-75 rounded-xl shadow-2xl max-w-xs md:max-w-lg mx-auto space-y-3"
                         >
                             <div className="w-20">
-                                <img src="public/green_card.png" alt="" className="outline outline-xs outline-accent rounded-full p-2" />
+                                <img src={greenCard} alt="" className="outline outline-xs outline-accent rounded-full p-2" />
                             </div>
                             <div className="text-center flex-1 mx-auto text-white text-3xl md:text-8xl font-semibold uppercase self-center">Carte<br /><span>Verte</span></div>
                         </div>

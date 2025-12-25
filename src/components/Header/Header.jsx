@@ -1,5 +1,6 @@
 import Navigation from "./Navigation.jsx"
 import MobileNav from "./MobileNav.jsx"
+import logo from '/LOGOS.png'
 
 export default function Header() {
     return (
@@ -7,7 +8,7 @@ export default function Header() {
             <MobileNav />
             <div className="md:flex justify-between items-center hidden">
                 <div className="w-15 rounded-full outline outline-accent ms-4">
-                    <img src="public/LOGOS.png" alt="Logo_Temporaire" />
+                    <img src={logo} alt="Logo_Temporaire" />
                 </div>
                 <div>
                     <Navigation />

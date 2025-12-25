@@ -1,5 +1,7 @@
 import { useState } from "react"
 import ToastAlert from "./ToastAlert"
+import swing from '/SWING.png'
+import crown from '/crown_ball.png'
 
 export default function Contact() {
     const [toast, setToast] = useState({ show: false })
@@ -61,10 +63,10 @@ export default function Contact() {
             <div id="coin_3D" className="w-full md:w-150 flex flex-col items-center justify-center self-center">
                 <div className="coin">
                     <div className="side heads">
-                        <img src="/SWING.png" alt="Face 1" />
+                        <img src={swing} alt="Face 1" />
                     </div>
                     <div className="side tails">
-                        <img src="/crown_ball.png" alt="Face 2" />
+                        <img src={crown} alt="Face 2" />
                     </div>
                 </div>
                 <div className="w-24 h-3 bg-black/50 rounded-full blur-sm mt-[-2px]"></div>

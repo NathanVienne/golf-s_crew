@@ -1,5 +1,6 @@
 import Icon from '@mdi/react';
 import { mdiFacebook, mdiInstagram } from '@mdi/js';
+import logo from '/LOGOS.png'
 
 export default function Footer() {
     return (
@@ -8,7 +9,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div>
                         <div className="w-15">
-                            <img src="public/LOGOS.png" alt="Logo_Temporaire" className='rounded-full'/>
+                            <img src={logo} alt="Logo_Temporaire" className='rounded-full'/>
                         </div>
                         <h3 className="text-xl font-bold mb-2">Bogey's Kings</h3>
                         <p className="text-sm text-muted-foreground">La passion du golf, ensemble</p>
